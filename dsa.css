@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+ details summary {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    padding-right: 1em;
+}
+b, strong {
+    font-weight: 700;
+}
+.entry-content>details>summary {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    padding-right: 1em;
+}
+.entry-content>details>summary {
+    margin-bottom: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #EE4B2B25;
+}
+.entry-content>details>summary {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    column-gap: 0.75em;
+    align-items: center;
+    padding-right: 1em;
+}
+details summary {
+    outline: 0;
+}
+details summary {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0 0 0 rgb(0 0 0 / 10%);
+    position: relative;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 300;
+    list-style: none;
+    font-family: "IBM Plex Sans",sans-serif;
+    transition: background 0.3s;
+}
+.outer-box-tracker {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 1em;
+}
+.outer-box-tracker .text {
+    font-weight: 700;
+    padding-right: 5px;
+}
+.text {
+    display: var(--textDisplay,inline-flex);
+    font-size: var(--textFontSize,1rem);
+}
+.entry-content details summary .box-of-tracker {
+    width: 200px;
+    height: 13px;
+    display: inline-block;
+    background-color: #E8E8E8;
+    /* border-radius: ; */
+    overflow: hidden;
+}
+p:not([class]) {
+    line-height: var(--cssTypographyLineHeight,1.78);
+    margin-top: var(--cssTypographyBasicMargin,1em);
+    margin-bottom: 0;
+}
+details table {
+    box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
+}
+table {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    border: none;
+    table-layout: auto;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.entry-content {
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+body, button, input, select, textarea {
+    color: #303030;
+    color: var(--text-color);
+    font-size: 17px;
+    font-size: 1.0625rem;
+    font-family: titillium web,arial,helvetica,sans-serif;
+    font-family: var(--text-font);
+    line-height: 1.75;
+    line-height: var(--text-line-height);
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+@media only screen and (min-width: 800px){
+:root {
+    --tz-column-gap: 2em;
+}
+}
