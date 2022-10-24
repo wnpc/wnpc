@@ -51,7 +51,7 @@ h1,h2{
     align-items: center;
 }
 .item:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: -1px 3px 10px blue;
 }
 @media screen and (min-width:320px) and (max-width:992px) {
