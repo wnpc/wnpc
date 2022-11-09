@@ -3,214 +3,150 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>About us</title>
+    <title>About us | WNPC Soit </title>
 
-  <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/about.css">
 
-	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-
-<header class="header-fixed">
-
-	<div class="header-limiter">
-
-		<a href="home.html"> <img src="image/logo.png" alt="wnpc" width="75" height="70"></a>
-
-		<nav>
-			<a href="home.html">Home</a>
-			<a href="skills.html">skill development</a>
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact</a>
-		</nav>
-
-	</div>
-
-</header>
-
-<div class="header-fixed-placeholder"></div>
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-
-	$(document).ready(function(){
-
-		var showHeaderAt = 150;
-
-		var win = $(window),
-				body = $('body');
-
-
-		if(win.width() > 400){
-
-
-			win.on('scroll', function(e){
-
-				if(win.scrollTop() > showHeaderAt) {
-					body.addClass('fixed');
-				}
-				else {
-					body.removeClass('fixed');
-				}
-			});
-
-		}
-
-	});
-
-</script>
-
-<div class="about-section">
-  <h1>About Us</h1>
-  <h3><b>"Programming isn't about what you know, it's about what you can figure out.” -Chris Pine</b></h3>
-  <p>WNPC is a technical community which aims at mentoring web development and programming skills to tech geeks. This club is initiated by a small peer group of SOIT department students to help build a bright career towards technology.</p>
-  <p>We are just a stepping stone and hope to help you gain in-depth coding knowledge and scale great heights in future!</p>
-  <br>
-  <h2>Hello everyone</h2>
-  <p>We all know that code powers our digital world and no doubt programming is the need of the hour these days.</p>
-  <p>Here is WNPC, the web and programming club of SOIT which allows the tech learners to spark and enhance their web development and coding skills.</p>
-  <p>We are looking forward to grow our community as we are just a stepping stone currently. Climb up the first stair by registering yourself on the...iske aage website ya form ki link jo bhi likhoge, uske acc. ye line complete kr dena</p>
-  <br><br>
-</div>
-
-
-
-<section id="team">
-        <div class="container my-3 py-5 text-center">
-            <div class="row mb-5">
-                <div class="col">
-                    <h1>Our Team</h1>
-                    <p class="my-3">
-
-                    </p>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="#"><img src="image/logo.png" alt="WNPC SOIT" width="50px" height="50px"></a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="container">
+            <div class="heading">
+                <h1>About Us</h1>
+            </div>
+            <div id="about-section">
+                <div id="about-1">
+                    <h2>"Programming isn't about what you know, it's about what you can figure out.” -Chris Pine</h2>
+                    <p>WNPC is a technical community which aims at mentoring web development and programming skills to
+                        tech
+                        geeks. This club is initiated by a small peer group of SOIT department students to help build a
+                        bright
+                        career towards technology.</p>
+                    <p>We are just a stepping stone and hope to help you gain in-depth coding knowledge and scale great
+                        heights
+                        in future!</p>
+                </div>
+                <div id="about-2">
+                    <h2>Hello everyone</h2>
+                    <p>We all know that code powers our digital world and no doubt programming is the need of the hour
+                        these
+                        days.</p>
+                    <p>Here is WNPC, the web and programming club of SOIT which allows the tech learners to spark and
+                        enhance
+                        their web development and coding skills.</p>
+                    <p>We are looking forward to grow our community as we are just a stepping stone currently. Climb up
+                        the
+                        first stair by registering yourself on the...iske aage website ya form ki link jo bhi likhoge,
+                        uske
+                        acc.
+                        ye line complete kr dena</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 pt-1">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <img class=""
-                                src=""
-                                alt="gaurav">
-                            <h3>gaurav verma</h3>
-                            <h5>founder</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, recusandae.</p>
-                            <div class="d-flex flex-row justify-content-center">
-                              <div class="social">
-                                  <a href=""><i class="fa fa-twitter"></i></a>
-                                  <a href=""><i class="fa fa-facebook-f"></i></a>
-                                  <a href=""><i class="fa fa-telegram"></i></a>
-                                  <a href=""><i class="fa fa-instagram"></i></a>
-                                  <a href=""><i class="fa fa-linkedin-in"></i></a>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 pt-1">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <img class=""
-                                src=""
-                                alt="sumit">
-                            <h3>sumit yadav</h3>
-                            <h5>co-founder</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, recusandae.</p>
-                            <div class="d-flex flex-row justify-content-center">
-                              <div class="social">
-                                  <a href=""><i class="fa fa-twitter"></i></a>
-                                  <a href=""><i class="fa fa-facebook-f"></i></a>
-                                  <a href=""><i class="fa fa-telegram"></i></a>
-                                  <a href=""><i class="fa fa-instagram"></i></a>
-                                  <a href=""><i class="fa fa-linkedin-in"></i></a>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 pt-1">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <img class=""
-                                src=""
-                                alt="vipin gautam">
-                            <h3>vipin gautam</h3>
-                            <h5>co-founder</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, recusandae.</p>
-                            <div class="d-flex flex-row justify-content-center">
-                              <div class="social">
-                                  <a href=""><i class="fa fa-twitter"></i></a>
-                                  <a href=""><i class="fa fa-facebook-f"></i></a>
-                                  <a href=""><i class="fa fa-telegram"></i></a>
-                                  <a href=""><i class="fa fa-instagram"></i></a>
-                                  <a href=""><i class="fa fa-linkedin-in"></i></a>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 pt-1">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <img class=""
-                                src=""
-                                alt="ayush">
-                            <h3>ayush pandey</h3>
-                            <h5>FrontEnd Developer</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, recusandae.</p>
-                            <div class="d-flex flex-row justify-content-center">
-                              <div class="social">
-                                  <a href=""><i class="fa fa-twitter"></i></a>
-                                  <a href=""><i class="fa fa-facebook-f"></i></a>
-                                  <a href=""><i class="fa fa-telegram"></i></a>
-                                  <a href=""><i class="fa fa-instagram"></i></a>
-                                  <a href=""><i class="fa fa-linkedin-in"></i></a>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
     </section>
-
+    <section id="team">
+        <div class="container">
+            <div class="heading">
+                <h1>Our Team</h1>
+            </div>
+            <div id="team-page">
+                <div class="member">
+                    <div class="image"> <img src="" alt="Team-member" width="50px" height="50px"></div>
+                    <div class="name">Name</div>
+                    <div class="position">Position</div>
+                    <div class="description"></div>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="image"> <img src="" alt="Team-member" width="50px" height="50px"></div>
+                    <div class="name">Name</div>
+                    <div class="position">Position</div>
+                    <div class="description"></div>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="image"> <img src="" alt="Team-member" width="50px" height="50px"></div>
+                    <div class="name">Name</div>
+                    <div class="position">Position</div>
+                    <div class="description"></div>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="image"> <img src="" alt="Team-member" width="50px" height="50px"></div>
+                    <div class="name">Name</div>
+                    <div class="position">Position</div>
+                    <div class="description"></div>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Footer Start -->
-<div class="footer wow fadeIn" data-wow-delay="0.3s">
-<div class="container-fluid">
-  <div class="container">
-      <div class="footer-info">
-          <a href="home.html"><img src="image/logo.png" alt="wnpc" width="70" width="70"></a>
-          <a href="https://www.rgpv.ac.in/Departments/ITDept.aspx?Dept=1"><img src="image/soit.png" alt="SOIT"width="60" height="60"></a>
-          <div class="footer-menu">
-              <p>wnpcsoit@gmail.com</p>
-          </div>
-          <div class="footer-social">
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-github"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-          </div>
-      </div>
-  </div>
-  <div class="container copyright">
-    <p>&copy; WNPC 2021 All Right Reserved </p>
-  </div>
-</div>
-</div>
-<!-- Footer End -->
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <!-- <div class="container"> -->
+                <div class="footer-info">
+                    <a href="home.html"><img src="image/logo.png" alt="wnpc" width="70" width="70"></a>
+                    <a href="https://www.rgpv.ac.in/Departments/ITDept.aspx?Dept=1"><img src="image/soit.png" alt="SOIT"
+                            width="60" height="60"></a>
+                    <div class="footer-menu">
+                        <p>wnpcsoit@gmail.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            <!-- </div> -->
+            <div class="copyright">
+                <p>&copy; WNPC 2021 All Right Reserved </p>
+            </div>
+        </div>
+    </div>
 
-    </body>
-    </html>
+</body>
+
+</html>
