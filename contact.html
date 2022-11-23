@@ -3,134 +3,126 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Contact Us</title>
+    <title>Contact Us</title>
 
-  <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/about.css">
 
-	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
 
-<header class="header-fixed">
+    <header class="header-fixed">
 
-	<div class="header-limiter">
+        <div class="header-limiter">
+            <!-- <div id="logo"> -->
+            <a href="home.html"> <img src="image/logo.png" alt="wnpc" width="75" height="70"></a>
+            <!-- </div> -->
+            <nav style="margin-top:10px">
+                <a href="home.html">Home</a>
+                <a href="skills.html">skill development</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-		<a href="home.html"> <img src="image/logo.png" alt="wnpc" width="75" height="70"></a>
+        </div>
 
-		<nav>
-			<a href="home.html">Home</a>
-			<a href="skills.html">skill development</a>
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact</a>
-		</nav>
+    </header>
 
-	</div>
-
-</header>
-
-<div class="header-fixed-placeholder"></div>
-
-
+    <div class="header-fixed-placeholder"></div>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-
-	$(document).ready(function(){
-
-		var showHeaderAt = 150;
-
-		var win = $(window),
-				body = $('body');
 
 
-		if(win.width() > 400){
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var showHeaderAt = 150;
+
+            var win = $(window),
+                body = $('body');
 
 
-			win.on('scroll', function(e){
+            if (win.width() > 400) {
 
-				if(win.scrollTop() > showHeaderAt) {
-					body.addClass('fixed');
-				}
-				else {
-					body.removeClass('fixed');
-				}
-			});
 
-		}
+                win.on('scroll', function(e) {
 
-	});
+                    if (win.scrollTop() > showHeaderAt) {
+                        body.addClass('fixed');
+                    } else {
+                        body.removeClass('fixed');
+                    }
+                });
 
-</script>
+            }
 
-<!-- contact us page -->
+        });
+    </script>
 
-<h2>Contact Us</h2>
+    <!-- contact us page -->
 
-<section class="contact-page-sec">
+
+
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="contact-info">
-            <div class="contact-info-item">
-              <div class="contact-info-icon">
-                <i class="fa fa-linkedin-square"></i>
-              </div>
-              <div class="contact-info-text">
-                <h2>linkedin</h2>
-                <span>linkedin id daalna hai </span>
-              </div>
+      <h1>Contact Us</h1>
+           <div class="contact-fome">
+            <div class="input-class">
+                <input type="text" class="input" placeholder="Your Name" required>
+                <input type="email" class="input" placeholder="Your E-mail" required>
+                <input type="tel" class="input" placeholder="Phone" required>
+                <input type="text" class="input" placeholder="Subject">
             </div>
-          </div>
+            <div class="msg">
+                <textarea placeholder="Message" cols="30" rows="10"></textarea>
+                <button class="btn" type="submit">Send</button>
+            </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <div class="contact-info">
-            <div class="contact-info-item">
-              <div class="contact-info-icon">
-                <i class="fa fa-envelope"></i>
-              </div>
-              <div class="contact-info-text">
-                <h2>E-mail</h2>
-                <span>yourmail@gmail.com</span>
-              </div>
+
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <a href="home.html"><img src="image/logo.png" alt="wnpc" width="100" style="
+                     padding-left: 0px;
+                      margin-left: 0px;
+                      margin-right: 30px;
+                      margin-top: 3px;">></a>
+                    <a href="https://www.rgpv.ac.in/Departments/ITDept.aspx?Dept=1"><img src="image/soit.png" alt="SOIT" width="80" height="80" style="
+                      margin-bottom: 13px;"></a>
+                    <div class="footer-menu">
+                        <p>wnpcsoit@gmail.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-github-square"></i></a>
+                        <a href="#"><i class="fa fa-telegram"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="container copyright">
+                <p>&copy; WNPC 2021 All Right Reserved </p>
+            </div>
         </div>
-        <div class="col-md-4">
-          <div class="contact-info">
-            <div class="contact-info-item">
-              <div class="contact-info-icon">
-                <i class="fa fa-instagram"></i>
-              </div>
-              <div class="contact-info-text">
-                <h2>instagram</h2>
-                <span>insta id link</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="contact-info">
-          <div class="contact-info-item">
-            <div class="contact-info-icon">
-              <i class="fa fa-github-square"></i>
-            </div>
-            <div class="contact-info-text">
-              <h2>github</h2>
-              <span>github id link</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+<<<<<<< HEAD
+    <!-- Footer End -->
+    <!-- Add icon library -->
+=======
     <div class="col-md-4">
       <div class="contact-info">
         <div class="contact-info-item">
@@ -224,3 +216,4 @@
 <!-- Footer End -->
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+>>>>>>> bbce385cb477436d0d562881669de404e500ca67
