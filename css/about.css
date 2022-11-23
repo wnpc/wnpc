@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .header-fixed {
     background-color: #292c2f;
     box-shadow: -1px 1px 20px white;
@@ -16,7 +16,9 @@
     transition: 0.25s;
 
 }
-
+body{
+  color: white;
+}
 .header-fixed .header-limiter {
     max-width: 1200px;
     text-align: left;
@@ -145,6 +147,7 @@ body {
 *:before,
 *:after {
     box-sizing: border-box;
+    color: white;
 }
 
 .column {
@@ -559,9 +562,6 @@ body {
 ::-moz-input-placeholder{
     color: aquamarine;
 }
-.button{
-
-}
 .btn{
     background: #39b7dd;
     text-align: center;
@@ -589,7 +589,6 @@ msg,button:hover{
         width: 100%;
     }
 }
-=======
 *, *:before, *:after {
   margin: 00;
   padding: 00;
@@ -802,4 +801,3 @@ padding-top: 12px;
 .footer .copyright p a:hover {
   color: #414141;
 }
->>>>>>> bbce385cb477436d0d562881669de404e500ca67

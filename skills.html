@@ -7,9 +7,60 @@
         Skill Development | WNPC SOIT RGPV BHOPAL
     </title>
     <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
+    <header class="header-fixed">
+
+        <div class="header-limiter">
+            <!-- <div id="logo"> -->
+            <a href="home.html"> <img src="image/logo.png" alt="wnpc" width="75" height="70"></a>
+            <!-- </div> -->
+            <nav style="margin-top:10px">
+                <a href="home.html">Home</a>
+                <a href="skills.html">skill development</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="header-fixed-placeholder"></div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var showHeaderAt = 150;
+
+            var win = $(window),
+                body = $('body');
+
+
+            if (win.width() > 400) {
+
+
+                win.on('scroll', function(e) {
+
+                    if (win.scrollTop() > showHeaderAt) {
+                        body.addClass('fixed');
+                    } else {
+                        body.removeClass('fixed');
+                    }
+                });
+
+            }
+
+        });
+    </script>
+
     <section class="skill_devlopment" id="skills">
         <div id="heading">
         <h1>SKILL DEVELOPMENT</h1>
@@ -40,6 +91,31 @@
             </div>
         </div>
     </section>
+    <!-- Footer Start -->
+<div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container-fluid">
+    <!-- <div class="container"> -->
+      <div class="footer-info">
+          <a href="home.html"><img src="image/logo.png" alt="wnpc" width="80" width="80"></a>
+          <a href="https://www.rgpv.ac.in/Departments/ITDept.aspx?Dept=1"><img src="image/soit.png" alt="SOIT"width="80" height="80"></a>
+          <div class="footer-menu">
+              <p>wnpcsoit@gmail.com</p>
+          </div>
+          <div class="footer-social">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-github-square"></i></a>
+              <a href="#"><i class="fa fa-telegram"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </div>
+      </div>
+    <!-- </div> -->
+    <div class="copyright">
+    <p>&copy; WNPC 2021 All Right Reserved </p>
+    </div>
+    </div>
+    </div>
+    <!-- Footer End -->
 </body>
 
 </html>

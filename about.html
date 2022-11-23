@@ -10,25 +10,63 @@
     <title>About us | WNPC Soit </title>
 
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/about.css">
 
     <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-    <nav id="navbar">
-        <div id="logo">
-            <a href="#"><img src="image/logo.png" alt="WNPC SOIT" width="50px" height="50px"></a>
+    <header class="header-fixed">
+
+        <div class="header-limiter">
+            <!-- <div id="logo"> -->
+            <a href="home.html"> <img src="image/logo.png" alt="wnpc" width="75" height="70"></a>
+            <!-- </div> -->
+            <nav style="margin-top:10px">
+                <a href="home.html">Home</a>
+                <a href="skills.html">skill development</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
         </div>
-        <div id="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </div>
-    </nav>
+
+    </header>
+
+    <div class="header-fixed-placeholder"></div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var showHeaderAt = 150;
+
+            var win = $(window),
+                body = $('body');
+
+
+            if (win.width() > 400) {
+
+
+                win.on('scroll', function(e) {
+
+                    if (win.scrollTop() > showHeaderAt) {
+                        body.addClass('fixed');
+                    } else {
+                        body.removeClass('fixed');
+                    }
+                });
+
+            }
+
+        });
+    </script>
+
     <section id="about">
         <div class="container">
             <div class="heading">
@@ -122,29 +160,31 @@
         </div>
     </section>
     
-    <!-- Footer Start -->
-    <div class="footer wow fadeIn" data-wow-delay="0.3s">
-        <div class="container-fluid">
-            <!-- <div class="container"> -->
-                <div class="footer-info">
-                    <a href="home.html"><img src="image/logo.png" alt="wnpc" width="70" width="70"></a>
-                    <a href="https://www.rgpv.ac.in/Departments/ITDept.aspx?Dept=1"><img src="image/soit.png" alt="SOIT"
-                            width="60" height="60"></a>
-                    <div class="footer-menu">
-                        <p>wnpcsoit@gmail.com</p>
-                    </div>
-                    <div class="footer-social">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-github"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-            <!-- </div> -->
-            <div class="copyright">
-                <p>&copy; WNPC 2021 All Right Reserved </p>
-            </div>
-        </div>
+   <!-- Footer Start -->
+<div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container-fluid">
+    <!-- <div class="container"> -->
+      <div class="footer-info">
+          <a href="home.html"><img src="image/logo.png" alt="wnpc" width="80" width="80"></a>
+          <a href="https://www.rgpv.ac.in/Departments/ITDept.aspx?Dept=1"><img src="image/soit.png" alt="SOIT"width="80" height="80"></a>
+          <div class="footer-menu">
+              <p>wnpcsoit@gmail.com</p>
+          </div>
+          <div class="footer-social">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-github-square"></i></a>
+              <a href="#"><i class="fa fa-telegram"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </div>
+      </div>
+    <!-- </div> -->
+    <div class="copyright">
+    <p>&copy; WNPC 2021 All Right Reserved </p>
+    </div>
+    </div>
+    </div>
+    <!-- Footer End -->
     </div>
 
 </body>
