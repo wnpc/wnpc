@@ -43,7 +43,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             var showHeaderAt = 150;
 
@@ -54,7 +54,7 @@
             if (win.width() > 400) {
 
 
-                win.on('scroll', function(e) {
+                win.on('scroll', function (e) {
 
                     if (win.scrollTop() > showHeaderAt) {
                         body.addClass('fixed');
@@ -73,8 +73,8 @@
 
 
     <div class="container">
-      <h1>Contact Us</h1>
-           <div class="contact-fome">
+        <h1>Contact Us</h1>
+        <div class="contact-fome">
             <div class="input-class">
                 <input type="text" class="input" placeholder="Your Name" required>
                 <input type="email" class="input" placeholder="Your E-mail" required>
@@ -85,34 +85,38 @@
                 <textarea placeholder="Message" cols="30" rows="10"></textarea>
                 <button class="btn" type="submit">Send</button>
             </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <!-- <div class="container"> -->
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <a href="home.html"><img src="image/logo.png" alt="wnpc" width="80" width="80"></a>
+                    <a href="https://www.rgpv.ac.in/Departments/ITDept.aspx?Dept=1"><img src="image/soit.png" alt="SOIT"
+                            width="80" height="80"></a>
+                </div>
+                <div class="footer-menu">
+                    <p>wnpcsoit@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github-square"></i></a>
+                    <a href="#"><i class="fa fa-telegram"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+            <!-- </div> -->
+            <div class="copyright">
+                <p>&copy; WNPC 2021 All Right Reserved </p>
             </div>
         </div>
-<!-- Footer Start -->
-<div class="footer wow fadeIn" data-wow-delay="0.3s">
-<div class="container-fluid">
-<!-- <div class="container"> -->
-  <div class="footer-info">
-      <a href="home.html"><img src="image/logo.png" alt="wnpc" width="80" width="80"></a>
-      <a href="https://www.rgpv.ac.in/Departments/ITDept.aspx?Dept=1"><img src="image/soit.png" alt="SOIT"width="80" height="80"></a>
-      <div class="footer-menu">
-          <p>wnpcsoit@gmail.com</p>
-      </div>
-      <div class="footer-social">
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-github-square"></i></a>
-          <a href="#"><i class="fa fa-telegram"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-linkedin-square"></i></a>
-      </div>
-  </div>
-<!-- </div> -->
-<div class="copyright">
-<p>&copy; WNPC 2021 All Right Reserved </p>
-</div>
-</div>
-</div>
-<!-- Footer End -->
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </div>
+    <!-- Footer End -->
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </body>
+
 </html>
