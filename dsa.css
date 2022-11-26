@@ -4,7 +4,9 @@
     box-sizing: inherit;
     color: white;
 }
-
+.header-limiter a{
+    padding-left: 15px;
+}
 .detailstable{
     width: 50%;
 }
@@ -35,6 +37,7 @@ h2{
     width: 100%;
     background-color: black;
     color: white;
+    padding-bottom: 20px;
 }
 table {
     margin-top: 1.5em;
@@ -74,8 +77,8 @@ td {
 }
  details p{
     display: inline-block;
-    width: 50%;
-    padding-left: 26%;
+    /* width: 50%;
+    padding-left: 26%; */
 } 
 table,ol{
     /* display: inline-block; */
