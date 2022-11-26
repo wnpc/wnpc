@@ -142,14 +142,6 @@ body {
 .html {
     box-sizing: border-box;
 }
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    color: white;
-}
-
 .column {
     float: left;
     width: 33.3%;
@@ -269,6 +261,7 @@ h3 {
 .footer {
     position: relative;
     background: #000000;
+    border-top: 1px solid white;
 }
 
 .footer .container-fluid {
@@ -514,7 +507,6 @@ h3 {
     margin: 0;
     box-sizing: border-box;
     font-family: Helvetica;
-    color: black;
     text-align: center;
 }
 
