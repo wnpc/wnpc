@@ -13,7 +13,6 @@
     z-index: -1;
     /* box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff; */
     transition: 0.25s;
-
 }
 
 body {
@@ -54,11 +53,11 @@ body {
 .header-fixed .header-limiter nav a:hover {
     color: #ffffff;
     text-decoration: none;
-    background: orange;
-    z-index: -1;
-    box-shadow: 0 0 10px orange, 0 0 10px orange, 0 0 10px orange, 0 0 10px orange, 0 0 10px orange;
-    transition: 0.25s;
-    border-radius: 10px;
+    background: #dc2f02;
+    margin: 0px 10px;
+    position: relative;
+    box-shadow: 0 0 10px #dc2f02, 0 0 20px #dc2f02, 0 0 40px #dc2f02, 0 0 80px #dc2f02, 0 0 100px #dc2f02;
+    transition: 0.5s;
 }
 
 .header-fixed .header-limiter nav {
@@ -115,7 +114,6 @@ body.fixed .header-fixed .header-limiter nav {
         padding: 20px 0;
         height: 75px;
     }
-
     .header-fixed .header-limiter h1 {
         float: none;
         margin: -8px 0 10px;
@@ -123,16 +121,13 @@ body.fixed .header-fixed .header-limiter nav {
         font-size: 24px;
         line-height: 1;
     }
-
     .header-fixed .header-limiter nav {
         line-height: 1;
         float: none;
     }
-
     .header-fixed .header-limiter nav a {
         font-size: 13px;
     }
-
     body.fixed .header-fixed {
         display: none;
     }
@@ -385,12 +380,10 @@ h3 {
         font-size: 20px;
         font-weight: 600;
     }
-
     .footer .footer-info h3 {
         margin-bottom: 20px;
         font-size: 16px;
     }
-
     .footer .footer-menu p {
         font-size: 16px;
         line-height: 16px;
@@ -602,11 +595,9 @@ button:hover {
     .contact-fome {
         flex-direction: column;
     }
-
     .msg text-area {
         height: 80px;
     }
-
     .input-class,
     .msg {
         width: 100%;
@@ -651,13 +642,11 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 li {
     list-style: none;
     margin-right: 30px;
-
 }
 
 li a {
@@ -674,11 +663,7 @@ ul li a::before {
     width: 0;
     background: orange;
     z-index: -1;
-    box-shadow: 0 0 10px orange,
-        0 0 20px orange,
-        0 0 40px orange,
-        0 0 80px orange,
-        0 0 100px orange;
+    box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange, 0 0 80px orange, 0 0 100px orange;
     transition: 0.25s;
 }
 
@@ -735,6 +720,7 @@ ul li a:hover::before {
     align-items: center;
     color: black;
 }
+
 
 /********* Footer CSS **********/
 
@@ -807,7 +793,6 @@ ul li a:hover::before {
 .footer .footer-social a i:hover {
     transform: scale(1.5);
 }
-
 
 .footer .copyright {
     position: relative;
