@@ -1,0 +1,145 @@
+
+/*-------------------------- Start Navbar---------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: #08070B;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin: 10px 0;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0 10px;
+    padding: 10px 25px;
+    position: relative;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #dc2f02;
+    z-index: -1;
+    box-shadow: 0 0 10px #dc2f02,
+                0 0 20px #dc2f02,
+                0 0 40px #dc2f02,
+                0 0 80px #dc2f02,
+                0 0 100px #dc2f02;
+    transition: 0.25s;
+}
+ul li a:hover::before{
+    width: 100%;
+}
+
+/*-------------------------- End Navbar---------------------------*/
+
+
+*,
+*::after,
+*::before {
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+#heading {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 205px;
+    height: 2px;
+}
+
+#skills {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: mont;
+}
+
+#dsa {
+    margin-top: 10px;
+}
+
+#dsa,
+#webd,
+#graphic {
+    width: 100%;
+    height: 50vh;
+}
+
+.flexboxes {
+    height: 44vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: -1px 3px 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: -1px 3px 10px blue;
+}
+
+@media screen and (min-width:320px) and (max-width:992px) {
+    .flexboxes {
+        flex-direction: column;
+        width: 100%;
+        height: 48vh;
+    }
+
+    #dsa {
+        height: 50vh;
+    }
+}
