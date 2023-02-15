@@ -13,8 +13,61 @@
     z-index: -1;
     /* box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff; */
     transition: 0.25s;
-
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    background: #08070B;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin: 10px 0;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0 10px;
+    padding: 10px 25px;
+    position: relative;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #ff3705;
+    z-index: -1;
+    box-shadow: 0 0 10px #dc2f02,
+                0 0 20px #dc2f02,
+                0 0 40px #dc2f02,
+                0 0 80px #dc2f02,
+                0 0 100px #dc2f02;
+    transition: 0.25s;
+}
+ul li a:hover::before{
+    width: 100%;
+}
+/*-----------------------------------------*/
+
 
 body {
     color: white;
@@ -54,11 +107,11 @@ body {
 .header-fixed .header-limiter nav a:hover {
     color: #ffffff;
     text-decoration: none;
-    background: orange;
-    z-index: -1;
-    box-shadow: 0 0 10px orange, 0 0 10px orange, 0 0 10px orange, 0 0 10px orange, 0 0 10px orange;
-    transition: 0.25s;
-    border-radius: 10px;
+    background: #dc2f02;
+    margin: 0px 10px;
+    position: relative;
+    box-shadow: 0 0 10px #dc2f02, 0 0 20px #dc2f02, 0 0 40px #dc2f02, 0 0 80px #dc2f02, 0 0 100px #dc2f02;
+    transition: 0.5s;
 }
 
 .header-fixed .header-limiter nav {
@@ -81,7 +134,7 @@ body {
 }
 
 .header-fixed .header-limiter nav a.selected {
-    color: #608bd2;
+    color: #0d3370;
     pointer-events: none;
     opacity: 1;
 }
@@ -115,7 +168,6 @@ body.fixed .header-fixed .header-limiter nav {
         padding: 20px 0;
         height: 75px;
     }
-
     .header-fixed .header-limiter h1 {
         float: none;
         margin: -8px 0 10px;
@@ -123,16 +175,13 @@ body.fixed .header-fixed .header-limiter nav {
         font-size: 24px;
         line-height: 1;
     }
-
     .header-fixed .header-limiter nav {
         line-height: 1;
         float: none;
     }
-
     .header-fixed .header-limiter nav a {
         font-size: 13px;
     }
-
     body.fixed .header-fixed {
         display: none;
     }
@@ -145,6 +194,8 @@ body.fixed .header-fixed .header-limiter nav {
         height: fit-content;
     }
 }
+/*---------------------------------------------*/
+
 
 body {
     margin: 0;
@@ -401,12 +452,10 @@ h3 {
         font-size: 20px;
         font-weight: 600;
     }
-
     .footer .footer-info h3 {
         margin-bottom: 20px;
         font-size: 16px;
     }
-
     .footer .footer-menu p {
         font-size: 16px;
         line-height: 16px;
@@ -626,11 +675,9 @@ button:hover {
     .contact-fome {
         flex-direction: column;
     }
-
     .msg text-area {
         height: 80px;
     }
-
     .input-class,
     .msg {
         width: 100%;
@@ -683,13 +730,11 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 li {
     list-style: none;
     margin-right: 30px;
-
 }
 
 li a {
@@ -706,11 +751,7 @@ ul li a::before {
     width: 0;
     background: orange;
     z-index: -1;
-    box-shadow: 0 0 10px orange,
-        0 0 20px orange,
-        0 0 40px orange,
-        0 0 80px orange,
-        0 0 100px orange;
+    box-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 40px orange, 0 0 80px orange, 0 0 100px orange;
     transition: 0.25s;
 }
 
@@ -767,6 +808,7 @@ ul li a:hover::before {
     align-items: center;
     color: black;
 }
+
 
 /********* Footer CSS **********/
 
@@ -839,7 +881,6 @@ ul li a:hover::before {
 .footer .footer-social a i:hover {
     transform: scale(1.5);
 }
-
 
 .footer .copyright {
     position: relative;
