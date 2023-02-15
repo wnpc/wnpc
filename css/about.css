@@ -57,10 +57,10 @@ ul li a::before{
     background: #ff3705;
     z-index: -1;
     box-shadow: 0 0 10px #dc2f02,
-                0 0 20px #dc2f02,
-                0 0 40px #dc2f02,
-                0 0 80px #dc2f02,
-                0 0 100px #dc2f02;
+                0 0 10px #dc2f02,
+                0 0 10px #dc2f02,
+                0 0 10px #dc2f02,
+                0 0 10px #dc2f02;
     transition: 0.25s;
 }
 ul li a:hover::before{
@@ -110,7 +110,7 @@ body {
     background: #dc2f02;
     margin: 0px 10px;
     position: relative;
-    box-shadow: 0 0 10px #dc2f02, 0 0 20px #dc2f02, 0 0 40px #dc2f02, 0 0 80px #dc2f02, 0 0 100px #dc2f02;
+    box-shadow: 0 0 10px #dc2f02, 0 0 10px #dc2f02, 0 0 10px #dc2f02, 0 0 10px #dc2f02, 0 0 10px #dc2f02;
     transition: 0.5s;
 }
 
