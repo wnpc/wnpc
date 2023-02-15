@@ -136,6 +136,14 @@ body.fixed .header-fixed .header-limiter nav {
     body.fixed .header-fixed {
         display: none;
     }
+    #team-page{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .member{
+        width: 50%;
+        height: fit-content;
+    }
 }
 
 body {
@@ -213,6 +221,14 @@ h1 {
     .column {
         width: 100%;
         display: block;
+    }
+    #team-page{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .member{
+        width: 50%;
+        height: fit-content;
     }
 }
 
@@ -395,6 +411,14 @@ h3 {
         font-size: 16px;
         line-height: 16px;
         padding: 0 5px;
+    }
+    #team-page{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .member{
+        width: 50%;
+        height: fit-content;
     }
 }
 
@@ -611,6 +635,14 @@ button:hover {
     .msg {
         width: 100%;
     }
+    #team-page{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .member{
+        width: 50%;
+        height: fit-content;
+    }
 }
 
 *,
@@ -724,7 +756,7 @@ ul li a:hover::before {
 }
 
 .member {
-    width: 12%;
+    /* width: 12%; */
     height: 200px;
     border: 2px solid white;
     border-radius: 10px;
